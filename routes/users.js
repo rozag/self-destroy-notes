@@ -3,7 +3,8 @@ const router = express.Router();
 
 /* GET users listing. */
 router.get('/', (req, res) => {
-    res.send('respond with a user');
+    const test = process.env.TEST || null;
+    res.send(`respond with a user; TEST=${test}`);
 });
 
 module.exports = router;
