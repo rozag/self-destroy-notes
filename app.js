@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 // TODO: Import your routes here
-const users = require('./routes/users');
+const notes = require('./routes/notes');
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // TODO: Add your routes to mapping here
-app.use('/users', users);
+app.use('/notes', notes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
