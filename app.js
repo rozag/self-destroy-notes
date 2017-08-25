@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const debug = require('debug')('nodejs-hack-template:server');
+const debug = require('debug')('self-destroy-notes:server');
 const http = require('http');
 const express = require('express');
 const path = require('path');
