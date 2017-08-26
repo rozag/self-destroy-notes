@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+"use strict";
+
 const debug = require('debug')('self-destroy-notes:server');
 const http = require('http');
 const express = require('express');
